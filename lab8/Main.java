@@ -13,7 +13,7 @@ public class Main {
             Database database=Database.getInstance();
             Artist artist1=new Artist(database);
             Album album1=new Album(database);
-            artist1.create("Er","US");
+            artist1.create("Weeknd","US");
             album1.create("ALbumNUme",1,1999);
             artist1.findByName("Weeknd");
             album1.findByArtist(1);
