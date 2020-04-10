@@ -17,7 +17,7 @@ class Database{
             e.printStackTrace();
         }
         try {
-            String query = String.format("select MAX(ID) from  Artist");
+            String query = String.format("select MAX(ID) from  Artist");//am presupus ca am macar 1 artist
             Statement stmt = con.createStatement();
             ResultSet res = stmt.executeQuery(query);
             if ( res.next() ){
@@ -30,7 +30,7 @@ class Database{
             System.out.println("NU a mers");
         }
         try {
-            String query = String.format("select MAX(ID) from  Album");
+            String query = String.format("select MAX(ID) from  Album");//am presupus ca am macar 1 album
             Statement stmt = con.createStatement();
             ResultSet res = stmt.executeQuery(query);
             if ( res.next() ){
