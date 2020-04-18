@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="MusicAlbumsPU">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>Entity.AlbumEntity</class>
+        <class>Entity.ArtistEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/testare"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="MYSQL"/>
+            <property name = "hibernate.show_sql" value = "true" />
+        </properties>
+    </persistence-unit>
+</persistence>
